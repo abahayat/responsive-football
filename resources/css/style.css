@@ -1,0 +1,264 @@
+/* =============================
+Template Name: Responsive Football Club Website Template.
+Template URI: 
+Description: An Awesome Club Website Template.
+Author: Aba Hayat
+Author URI: sakib22.xyz
+Support: abahayat48@gmail.com
+============================= */
+
+/* =============================
+CSS INDEX
+=========
+1. COMMON CSS
+2. HERO SECTION
+3. PLAYERS SECTION
+4. HIGHLIGHTS SECTION
+5. EVENT SECTION
+6. CONTACT SECTION
+7. FOOTER SECTION
+============================= */
+
+/* =============================
+1. COMMON CSS
+============================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+    color: #18191F;
+    background: #fff;
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+    line-height: normal;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+}
+h1 {
+    color: #fff;
+    margin: 50px 0 30px;
+    font-size: 640%;
+}
+h2 {
+    font-size: 480%;
+}
+h3 {
+    font-size: 280%;
+    padding: 10px 0;
+}
+h4 {
+    font-size: 200%;
+    margin-top: 17px;
+}
+p {
+    color: #6C6C6C;
+    font-size: 160%;
+}
+a {
+    color: #fff;
+    font-size: 160%;
+    text-decoration: none;
+}
+ul {
+    display: inline-block;
+    list-style-type: none;
+}
+li {
+    display: inline-block;
+}
+
+/* Reuseable Components */
+.row {
+    width: 1180px;
+    margin: auto;
+}
+.btn,
+.btn:visited,
+.btn:active {
+    padding: 10px 25px;
+    background: #E02C6D;
+}
+
+/* =============================
+2. HERO SECTION
+============================= */
+#hero {
+    background: #2D25A0;
+}
+#navbar {
+    padding: 30px 0;
+}
+.mobile-menu i {
+    font-size: 220%;
+}
+.mobile-menu {
+    display: none;
+}
+.navbar-flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+.flex-item-1 {
+    flex-grow: 1;
+}
+.flex-item-2 {
+    width: 150px;
+    text-align: right;
+}
+.menu-items {
+    margin: 0 10px;
+}
+.menu-items:first-child {
+    margin-left: 0;
+}
+.login-btn span {
+    margin-right: 10px;
+}
+.hero-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 70px 0;
+}
+.banner-img {
+    width: 100%;
+    transition: 1s;
+}
+.banner-img:hover {
+    transform: rotate(4deg);
+}
+
+.watch-btn span {
+    margin-left: 10px;
+}
+
+/* =============================
+3. PLAYERS SECTION
+============================= */
+#players {
+    padding: 50px 0;
+}
+.players-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+}
+.players-grid-items {
+    padding: 15px;
+    box-shadow: 2px 3px 10px 10px #6c6c6c1a;
+}
+.player-img img {
+    width: 100%;
+}
+
+/* =============================
+4. HIGHLIGHTS SECTION
+============================= */
+#highlights {
+    padding: 75px 0;
+}
+.highlights-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+.highlights-grid-items p {
+    padding: 25px 0 40px;
+}
+.match-img img {
+    width: 100%;
+}
+/* =============================
+5. EVENT SECTION
+============================= */
+#event {
+    padding: 30px 0 100px;
+}
+.event-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 30px;
+}
+.nested-event-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+.nested-event-grid-items {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+.event-date h2 {
+    font-size: 900%;
+    margin-top: -30px;
+}
+.advertising {
+    width: 100%;
+}
+
+/* =============================
+6. CONTACT SECTION
+============================= */
+#contact {
+    height: 550px;
+    text-align: center;
+    position: relative;
+    background: linear-gradient(rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8)),url(img/contact.jpg) no-repeat center / cover fixed;
+}
+.contact-area {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+}
+#contact h2 {
+    color: #fff;
+}
+input[type="email"],
+input[type="submit"] {
+    padding: 15px 25px;
+    margin-top: 20px;
+    border: none;
+    font-size: 200%;
+}
+input[type="email"] {
+    padding-right: 100px;
+}
+input[type="email"]:focus {
+    outline: none;
+}
+input[type="submit"] {
+    color: #fff;
+    background: #E02C6D;
+    cursor: pointer;
+}
+
+/* =============================
+7. FOOTER SECTION
+============================= */
+#footer {
+    padding: 75px 0;
+    text-align: center;
+}
+.footer-img img {
+    width: 30%;
+}
+.social-icon {
+    margin: 10px 0;
+}
+.social-icon li {
+    margin: 0 5px;
+}
+.social-icon a {
+    color: #6C6C6C;
+}
+.social-icon i {
+    font-size: 200%;
+}
